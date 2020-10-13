@@ -1,0 +1,81 @@
+.content {
+    padding: 0 15px;
+    height: 100vh;
+    box-sizing: border-box;
+    header {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            margin: 0;
+            text-transform: uppercase;
+        }
+    }
+}
+.list {
+    width: 100%;
+    height: calc(100% - 163px);
+    overflow-y: auto;
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    border-radius: 3px;
+    .card {
+        width: 100%;
+        background-color: #facc6b;
+        background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
+        border-radius: 3px;
+        cursor: pointer;
+        display: inline-block;
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            position: relative;
+            border-radius: 3px;
+        }
+
+        .card-content {
+            padding: 5px 5px 0 5px;
+            p {
+                margin: 0;
+                font-weight: bold;
+            }
+            .timing {
+                padding: 3px 5px 0 5px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .clock {
+                    width: 12px;
+                    height: 12px;
+                }
+                .time {
+                    display: inline-block;
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .tutor-info {
+            padding: 0 5px 5px 5px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .tutor-profile {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .user-name {
+                margin: 0;
+                font-style: 14px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

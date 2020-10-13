@@ -1,0 +1,13 @@
+.App {
+  background-color: #f7f7f7;
+  height: 100vh;
+  width: 100vw;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section {
+      background: #f7f7f7;
+      position: relative;
+    }
+  }
+}

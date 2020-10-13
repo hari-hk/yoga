@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Maisy Ware",
+            "image": "images/yoga/yoga1.jpg",
+            "title": "Yoga for Relaxation",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        },
+        {
+            "id": 2,
+            "name": "Tara Lambert",
+            "image": "images/yoga/yoga2.jpg",
+            "title": "Yoga for flexibility",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        },
+        {
+            "id": 3,
+            "name": "Rowan Castillo",
+            "image": "images/yoga/yoga3.jpg",
+            "title": "Yoga for weightloss",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        },
+        {
+            "id": 4,
+            "name": "Crystal Huffman",
+            "image": "images/yoga/yoga4.jpg",
+            "title": "Medication Yoga",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        },
+        {
+            "id": 5,
+            "name": "Maddie Swanson",
+            "image": "images/yoga/yoga5.jpg",
+            "title": "Increase Fertility",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        },
+        {
+            "id": 6,
+            "name": "Kian Bernard",
+            "image": "images/yoga/yoga6.jpg",
+            "title": "Medication",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        },
+        {
+            "id": 7,
+            "name": "Casey Webb",
+            "image": "images/yoga/yoga7.jpg",
+            "title": "Yoga for Women",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        },
+        {
+            "id": 8,
+            "name": "Maisy Ware",
+            "image": "images/yoga/yoga1.jpg",
+            "title": "Yoga for Diabets",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        },
+        {
+            "id": 9,
+            "name": "Tara Lambert",
+            "image": "images/yoga/yoga2.jpg",
+            "title": "For back pain",
+            "fromTime": "6:30",
+            "toTime": "8:30"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+.menu {
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    height: 90vh;
+    width: 70px;
+    border-radius: 50px;
+    position: absolute;
+    left: 20px;
+    padding: 10px 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    img,
+    .icon {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .menu-icon {
+        height: 30px;
+        width: auto;
+        margin-top: 10px;
+        fill: rgba(0, 0, 0, 0.5);
+    }
+    .is-active {
+        .menu-icon {
+            height: 30px;
+            width: auto;
+            margin-top: 10px;
+            fill: rgba(0, 0, 0, 0.9);
+        }
+    }
+    .profile-image {
+        border-radius: 50%;
+        border: 1px solid #f1f1f1;
+        &:hover {
+            border: 1px solid #000000;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            margin: 10px 0;
+            cursor: pointer;
+            .menu-icon:hover {
+                fill: #000;
+            }
+        }
+    }
+}

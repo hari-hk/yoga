@@ -1,0 +1,87 @@
+.toolbar {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-column-gap: 2rem;
+    text-align: center;
+    position: relative;
+    .price-range {
+        // background: #eee;
+    }
+    .mini-card {
+        background: #fff;
+        padding: 10px;
+        border-radius: 7px;
+        p {
+            margin: 0;
+            font-size: 12px;
+        }
+        h6 {
+            margin: 12px 0 0 0;
+            font-size: 15px;
+        }
+    }
+    .clickable {
+        cursor: pointer;
+        &:hover {
+            background: #8bcc4a;
+            color: #fff;
+        }
+    }
+}
+.dialog {
+    position: absolute;
+    width: 200px;
+    z-index: 999;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-box-shadow: 6px 6px 15px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 15px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 15px -9px rgba(0, 0, 0, 0.75);
+    .form-control {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        &:first-child() {
+            margin-top: 0;
+        }
+        input {
+            width: 40px;
+            padding: 4px 7px;
+            border: 1px solid #eee;
+            background: #f7f7f7;
+            border-radius: 3px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        .submit {
+            width: 100%;
+            padding: 4px;
+            border: none;
+            border-radius: 3px;
+            background: #8bcc4a;
+            color: #fff;
+        }
+        .cancel {
+            width: 100%;
+            padding: 4px;
+            border: none;
+            border-radius: 3px;
+            background: #fff;
+            color: #000;
+        }
+    }
+}
+.distance {
+    right: 0;
+}

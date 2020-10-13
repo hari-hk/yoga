@@ -1,0 +1,48 @@
+.enquires {
+    height: 100%;
+    overflow-y: scroll;
+    background: #f1f1f1;
+    padding: 10px;
+    .title {
+        margin: 0;
+    }
+
+    .card {
+        display: flex;
+        min-height: 100px;
+        margin: 4px 0;
+        background: #ffffff;
+        border-radius: 3px;
+        border: 1px solid #e6e6e6;
+        cursor: pointer;
+        .primary {
+            img {
+                width: 100px;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+        .detail {
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            p {
+                margin: 0;
+            }
+            .title {
+                font-size: 16px;
+                font-weight: 600;
+                color: #8bcc4a;
+            }
+            .query {
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+    }
+    .list-enq {
+        height: calc(100vh - 52px);
+        overflow-y: scroll;
+    }
+}
