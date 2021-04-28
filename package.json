@@ -2,6 +2,7 @@
   "name": "yoga-template",
   "version": "0.1.0",
   "private": true,
+  "author": "Hari hara kumar",
   "dependencies": {
     "cra-template": "1.0.3",
     "google-map-react": "^2.1.6",
