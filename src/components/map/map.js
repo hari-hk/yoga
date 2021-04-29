@@ -1,5 +1,5 @@
-import React from "react";
 import GoogleMapReact from "google-map-react";
+import React from "react";
 export class MapComponent extends React.Component {
   static defaultProps = {
     center: {

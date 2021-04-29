@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import "./enquires.scss";
-
 import listData from "../../assets/jsons/yoga-list.json";
+import "./enquires.scss";
 
 export class Enquires extends Component {
   constructor() {

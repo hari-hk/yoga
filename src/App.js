@@ -1,20 +1,17 @@
 import React from "react";
-import "./App.scss";
-
-import { MenuComponent as Menu } from "./components/menu/menu.component";
-import { MapComponent as Map } from "./components/map/map";
-
-import { Home } from "./screens/home/home";
-import { Enquires } from "./screens/enquires/enquires";
-import { MySchedules } from "./screens/my-schedules/my-schedules";
-import { Settings } from "./screens/settings/settings";
-
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   Redirect,
+  Route,
+  Switch,
 } from "react-router-dom";
+import "./App.scss";
+import { MapComponent as Map } from "./components/map/map";
+import { MenuComponent as Menu } from "./components/menu/menu.component";
+import { Enquires } from "./screens/enquires/enquires";
+import { Home } from "./screens/home/home";
+import { MySchedules } from "./screens/my-schedules/my-schedules";
+import { Settings } from "./screens/settings/settings";
 
 function App() {
   return (
