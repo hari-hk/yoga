@@ -33,7 +33,7 @@
             height: 30px;
             width: auto;
             margin-top: 10px;
-            fill: rgba(0, 0, 0, 0.9);
+            fill: var(--primary-rgb);
         }
     }
     .profile-image {
@@ -50,7 +50,7 @@
             margin: 10px 0;
             cursor: pointer;
             .menu-icon:hover {
-                fill: #000;
+                fill: var(--primary-rgb, 0.2);
             }
         }
     }

@@ -1,56 +1,47 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 
-import { MenuComponent as Menu } from './components/menu/menu.component';
-import { MapComponent as Map } from './components/map/map';
+import { MenuComponent as Menu } from "./components/menu/menu.component";
+import { MapComponent as Map } from "./components/map/map";
 
-import { Home } from './screens/home/home';
-import { Enquires } from './screens/enquires/enquires';
-import { MySchedules } from './screens/my-schedules/my-schedules';
-import { Settings } from './screens/settings/settings';
+import { Home } from "./screens/home/home";
+import { Enquires } from "./screens/enquires/enquires";
+import { MySchedules } from "./screens/my-schedules/my-schedules";
+import { Settings } from "./screens/settings/settings";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Router component={Home} path='/'>
+      <Router component={Home} path="/">
         <Menu></Menu>
-        <div className="container">
-          <section><Map /></section>
-          <section>
-            <Switch>
+        <Switch>
+          <div className="container">
+            <section>
+              <Map />
+            </section>
+            <section>
               <Route
                 exact
                 path="/"
                 render={() => {
-                  return (
-                    <Redirect to="/home" />
-                  )
+                  return <Redirect to="/home" />;
                 }}
               />
-              <Route path="/home">
-                <Home />
-              </Route>
-              <Route path="/enquires">
-                <Enquires />
-              </Route>
-              <Route path="/my-schedules">
-                <MySchedules />
-              </Route>
-              <Route path="/settings">
-                <Settings />
-              </Route>
-            </Switch>
-          </section>
-        </div>
+              <Route path="/home" component={Home} />
+              <Route path="/enquires" component={Enquires} />
+              <Route path="/my-schedules" component={MySchedules} />
+              <Route path="/settings" component={Settings} />
+            </section>
+          </div>
+        </Switch>
       </Router>
-
     </div>
   );
 }
