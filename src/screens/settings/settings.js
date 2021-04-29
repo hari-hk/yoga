@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Input from "../../components/Input/Input";
 import "./settings.scss";
 
 export class Settings extends Component {
@@ -7,22 +8,10 @@ export class Settings extends Component {
       <div className="setting">
         <h1 className="title">Settings</h1>
         <section className="profile-details">
-          <div className="form-fields">
-            <label for="firstName">First Name</label>
-            <input autocomplete="off" type="text" id="firstName" />
-          </div>
-          <div className="form-fields">
-            <label for="lastName">Last Name</label>
-            <input autocomplete="off" type="text" id="lastName" />
-          </div>
-          <div className="form-fields">
-            <label for="email">Email</label>
-            <input autocomplete="off" type="email" id="email" />
-          </div>
-          <div className="form-fields">
-            <label for="phone">Phone</label>
-            <input autocomplete="off" type="tel" id="phone" />
-          </div>
+          <Input label="First Name" id="firstName" />
+          <Input label="Last Name" id="lastName" />
+          <Input label="Email" type="email" id="email" />
+          <Input label="Phone" type="tel" id="phone" />
 
           <div className="form-fields">
             <label for="gender">Gender</label>
@@ -32,10 +21,7 @@ export class Settings extends Component {
               <option value="other">Other</option>
             </select>
           </div>
-          <div className="form-fields">
-            <label for="dob">DOB</label>
-            <input autocomplete="off" type="date" id="dob" />
-          </div>
+          <Input label="DOB" type="date" id="dob" />
         </section>
       </div>
     );
