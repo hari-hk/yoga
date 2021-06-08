@@ -39,10 +39,10 @@ export class MiniCalender extends React.Component {
     return (
       <div className="mini-calender">
         <p>
-          {this.firstDate?.month} {this.firstDate?.date} -{" "}
+          {this.firstDate?.month} {this.firstDate?.date} -
           {this.firstDate?.month === this.lastDate?.month
             ? ""
-            : this.lastDate?.month}{" "}
+            : this.lastDate?.month}
           {this.lastDate?.date}
         </p>
         <div className="dates">

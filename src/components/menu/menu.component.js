@@ -8,32 +8,35 @@ import { ReactComponent as Logo } from "../../assets/icons/yoga.svg";
 import profile from "../../assets/images/profile.jpg";
 import "./menu.scss";
 
+const List = ({ computedmatch, path }) => {
+  return (
+    <li>
+      <NavLink activeClassName="is-active" to={path}>
+        {/* <props.component className="menu-icon" />
+        <ReactComponent
+          component={component}
+          className="menu-icon"
+        ></ReactComponent> */}
+        {computedmatch}
+        {/* <IconComponent {...component} /> */}
+      </NavLink>
+    </li>
+  );
+};
+
 export class MenuComponent extends React.Component {
   render() {
     return (
       <div className="menu">
         <Logo className="icon" />
         <ul>
-          <li>
-            <NavLink activeClassName="is-active" to="/home">
-              <HomeIcon className="menu-icon" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="is-active" to="/enquires">
-              <ChatIcon className="menu-icon" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="is-active" to="/my-schedules">
-              <CalenderIcon className="menu-icon" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="is-active" to="/settings">
-              <SettingIcon className="menu-icon" />
-            </NavLink>
-          </li>
+          <List
+            path="/home"
+            computedmatch={<HomeIcon className="menu-icon" />}
+          />
+          {/* <List path="/enquires" component={ChatIcon} />
+          <List path="/my-schedules" component={CalenderIcon} />
+          <List path="/settings" component={SettingIcon} /> */}
         </ul>
         <img className="profile-image" src={profile} alt="profile" />
       </div>
